@@ -25,7 +25,7 @@ app.listen(port, () => {
 })
 
 // Generate content endpoint
-app.post('/generate', async (req, res) => {
+app.post('/generate-text', async (req, res) => {
     try {
         const { prompt } = req.body
         if (!prompt) {
